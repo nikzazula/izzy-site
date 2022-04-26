@@ -1,0 +1,442 @@
+
+/* mobile view */
+
+html{
+  scroll-behavior: smooth;
+}
+
+.skip-to-content-link {
+  background: #e77e23;
+  height: 30px;
+  padding: 8px;
+  padding-right: 5%;
+  margin-top: 9%;
+  position: absolute;
+  border-radius: 2%;
+  text-decoration: none;
+  color: white;
+  transform: translateX(-80%);
+  transition: transform 0.3s;
+  font-size: 14px;
+}
+
+.skip-to-content-link:hover{
+transform: translateX(0%);
+}
+
+#main-title{
+color: #323232;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 20px;
+padding-left: 20px;
+width: auto;
+height: auto;
+font-family: "Montserrat", sans-serif;
+text-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color:#F3B5B5;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 2%;
+width: 80vw;
+}
+
+#main-title-div{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-top: 100px;
+height: auto;
+}
+
+#page-title{
+text-align: center;
+padding-top: 50px;
+font-size: 55px;
+color:#F3B5B5;
+font-family: "Montserrat", sans-serif;
+text-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#main{
+  margin: 0;
+}
+
+#nav{
+  z-index: 6;
+  padding: 10px;
+  background-color: #F7B0B0;
+  position: relative;
+  text-align: center; 
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+#nav .active {
+  color: #323232;
+  text-decoration: underline;
+}
+
+#navdiv{
+  display: flex;
+  flex-direction: row;
+}
+
+#body-flex-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#donate-link{
+  text-decoration: none;
+  color: #323232;
+}
+
+.index-div {
+  background-color:#F3B5B5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 10%;
+}
+
+.index-div-title{
+  text-align: center;
+  font-size: 3vw;
+  color: #323232;
+
+}
+
+.index-div-text{
+  color: #323232;
+  padding: 5px;
+  margin: 10px;
+  line-height: 3vw;
+  font-size: 2.5vw;
+}
+
+.about-div-text{
+  color: #323232;
+  padding: 5px;
+  margin: 10px;
+  line-height: 3vw;
+  font-size: 2vw;
+}
+
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 80vw);
+  grid-template-rows: repeat(9, 80vw);
+  gap: 10%;
+  width: 100%;
+}
+
+.gallery__item{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gallery__img{
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-div{
+  height: 90%;
+  width: auto;
+  overflow: hidden;
+}
+
+#image-7{
+  width: 100%;
+  height: auto;
+}
+
+#image-10{
+  width: 100%;
+  height: auto;
+}
+
+.img-caption{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7B0B0;
+  text-align: center;
+  padding-top: 20px;
+  height: 10%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.caption-text{
+  margin-top: -4vw;
+  font-size: 2.8vw;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#email-link{
+  text-decoration: none;
+  color: #323232;
+}
+#contact-flip-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 2%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 10%;
+  background-color: transparent;
+  perspective: 1000px;
+}
+#contact-flip-card-inner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* */
+#contact-flip-card:hover #contact-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#contact-flip-card-front, #contact-flip-card-back {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+#contact-flip-card-front{
+  background-color:#F3B5B5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+}
+
+#contact-flip-card-back{
+  background-color:#F3B5B5;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#form-div{
+  margin-top: 2vw;
+  width: 80%;
+}
+.form-label{
+  font-size: 2vw;
+  color: #323232;
+}
+input[type=text], select, textarea {
+  font-size: 2vw;
+  width: 100%; /* Full width */
+  padding: .05vw; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */ /* Add a top margin */
+  margin-top: 0.5vw;
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email], select, textarea {
+  font-size: 2vw;
+  width: 100%; /* Full width */
+  padding: .05vw; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */ /* Add a top margin */
+  margin-top: 0.5vw;
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+body{
+font-family: "Montserrat", sans-serif;
+background-color: #FDFFF2;
+font-size: 18px;
+margin: 0;
+background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(../images/navbarimg.png);
+background-size: cover; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+h1{
+font-size: 50px;
+line-height: 1;
+text-align: center;
+color: #323232;
+}
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+color: #323232;
+}
+
+nav ul{
+margin: 0;
+list-style-type: none;
+}
+
+nav li{
+margin: 0;
+display: inline;
+padding-right: 20px;
+}
+
+header p{
+color: white;
+font-size: 24px;
+padding: 0 100px;
+text-align: center;
+}
+
+footer{
+position: fixed;
+width: 100%;
+height: 25px;
+font-size: 12px;
+text-align: right;
+bottom: 0;
+color: #323232;
+}
+
+#footer-text{
+  padding-right: 20px;
+  color: white;
+}
+
+nav a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+font-size: 100%;
+}
+
+nav a:hover{
+color: #323232;
+}
+
+header{
+margin: 0;
+}
+
+/* tablet view */
+@media (min-width: 750px)  { 
+  .gallery {
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(6, 40vw);
+    gap: 3%;
+    height: auto;
+  }
+
+  .caption-text{
+    margin-top: -2vw;
+    font-size: 1.5vw;
+  }
+}
+
+/* desktop view */
+@media (min-width: 1024px)  { 
+  .gallery {
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 30vw);
+    gap: 3%;
+    height: auto;
+  }
+  .caption-text{
+    margin-top: -2vw;
+    font-size: 1vw;
+  }
+  
+}
+
+@media (prefers-reduced-motion) {
+  .grow:hover {
+    transform: none;
+  }
+  #contact-flip-card:hover #contact-flip-card-inner {
+    transform: none;
+  }
+  body{
+    background-attachment: scroll;
+    }
+  #contact-flip-card-front{
+    display: none;
+    }
+  #contact-flip-card-front, #contact-flip-card-back {
+    -webkit-backface-visibility: visible; /* Safari */
+    backface-visibility: visible;
+    transform: scaleX(1);
+    }
+}
