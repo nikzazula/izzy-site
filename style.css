@@ -342,7 +342,7 @@ margin-bottom: 5px;
 
 /* /////////////////////////////////////////////////*/
 /* PAGE */
-#page-grid-container{
+.page-grid-container{
     padding-top: 50px;
     display: grid;
     width: 100%;
@@ -363,7 +363,7 @@ margin-bottom: 5px;
     background-color: white;
 }
 
-#first-page{
+.first-page{
     width: 100%;
     padding-top: 100px;
 }
